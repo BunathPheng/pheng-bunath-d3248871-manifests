@@ -22,4 +22,4 @@ spec:
           image: docker.io/phengbunath/pheng-bunath-d3248871:1
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
