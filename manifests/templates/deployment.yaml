@@ -1,0 +1,25 @@
+---
+# Source: helm for kubernetes/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pheng-bunath-d3248871
+  labels:
+    app: pheng-bunath-d3248871
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: pheng-bunath-d3248871
+  template:
+    metadata:
+      labels:
+        app: pheng-bunath-d3248871
+    spec:
+      containers:
+        - name: pheng-bunath-d3248871
+          image: docker.io/phengbunath/pheng-bunath-d3248871:1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
